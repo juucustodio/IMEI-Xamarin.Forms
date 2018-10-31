@@ -4,11 +4,10 @@
              xmlns:local="clr-namespace:DemoImei"
              x:Class="DemoImei.MainPage">
 
-    <StackLayout>
-        <!-- Place new controls here -->
-        <Label Text="Welcome to Xamarin.Forms!" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
+    <StackLayout HorizontalOptions="Center"
+                 VerticalOptions="CenterAndExpand">
+        <Label x:Name="LblImei" />
+        <Button Text="Get Imei" Clicked="Button_OnClicked"/>
     </StackLayout>
 
 </ContentPage>
